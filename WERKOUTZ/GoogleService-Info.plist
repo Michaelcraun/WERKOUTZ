@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>125207188782-52cn506ietnlfa2a394qk3sv2mbsv5q3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.125207188782-52cn506ietnlfa2a394qk3sv2mbsv5q3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAQHXEpvFf7FiXJZ7y81iMoqusidUP5Tco</string>
+	<key>GCM_SENDER_ID</key>
+	<string>125207188782</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.craunicproductions.werkoutz</string>
+	<key>PROJECT_ID</key>
+	<string>werkouts-353ac</string>
+	<key>STORAGE_BUCKET</key>
+	<string>werkouts-353ac.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:125207188782:ios:bd2093b202986fd59896bf</string>
+	<key>DATABASE_URL</key>
+	<string>https://werkouts-353ac.firebaseio.com</string>
+</dict>
+</plist>

@@ -3,16 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35F464990DA4B564C863CA15 /* Pods_WERKOUTZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CFB4A984110FB97E50AD39 /* Pods_WERKOUTZ.framework */; };
+		38F98416493AD37C81593325 /* Pods_WERKOUTZTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C095640B018ABE59E0DAB9B /* Pods_WERKOUTZTests.framework */; };
+		7EB4000C12CCBD8081D331F8 /* Pods_WERKOUTZ_WERKOUTZUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D9329165370E626868E69F /* Pods_WERKOUTZ_WERKOUTZUITests.framework */; };
+		9B0F180A24EAD35300A7A533 /* DurationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F180924EAD35300A7A533 /* DurationPicker.swift */; };
+		9B0F180C24EADD4900A7A533 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F180B24EADD4900A7A533 /* ViewExtension.swift */; };
+		9B2D071924E1C03C005006BE /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D071824E1C03C005006BE /* Exercise.swift */; };
+		9B5A65DC24E5B7E900B98EB3 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A65DB24E5B7E900B98EB3 /* AddExerciseView.swift */; };
+		9B5A65DE24E5BB1300B98EB3 /* ExerciseSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A65DD24E5BB1300B98EB3 /* ExerciseSearchField.swift */; };
+		9B62558524E1C7020038DB0F /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B62558424E1C7020038DB0F /* ExerciseView.swift */; };
+		9B62558724E1C8230038DB0F /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B62558624E1C8230038DB0F /* Record.swift */; };
+		9B62558924E2BB8A0038DB0F /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B62558824E2BB8A0038DB0F /* ExerciseCell.swift */; };
+		9B62558B24E2BDEA0038DB0F /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B62558A24E2BDEA0038DB0F /* HistoryCell.swift */; };
+		9BA399D824E77698003A39F2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA399D724E77698003A39F2 /* StringExtension.swift */; };
 		9BABBC5D24E1BEE20094A851 /* WERKOUTZApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BABBC5C24E1BEE20094A851 /* WERKOUTZApp.swift */; };
 		9BABBC5F24E1BEE20094A851 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BABBC5E24E1BEE20094A851 /* ContentView.swift */; };
 		9BABBC6124E1BEE60094A851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BABBC6024E1BEE60094A851 /* Assets.xcassets */; };
 		9BABBC6424E1BEE60094A851 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BABBC6324E1BEE60094A851 /* Preview Assets.xcassets */; };
 		9BABBC6F24E1BEE60094A851 /* WERKOUTZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BABBC6E24E1BEE60094A851 /* WERKOUTZTests.swift */; };
 		9BABBC7A24E1BEE60094A851 /* WERKOUTZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BABBC7924E1BEE60094A851 /* WERKOUTZUITests.swift */; };
+		9BB077F624FBD57400457DE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB077F524FBD57400457DE9 /* GoogleService-Info.plist */; };
+		9BC76E8424E5C17400191B88 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC76E8324E5C17400191B88 /* EntryCell.swift */; };
+		9BC76E8624E5C59800191B88 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC76E8524E5C59800191B88 /* NavigationButton.swift */; };
+		9BC76E8924E5C76200191B88 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC76E8824E5C76200191B88 /* DateExtension.swift */; };
+		9BC76E8B24E5C77700191B88 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC76E8A24E5C77700191B88 /* TimeIntervalExtension.swift */; };
+		9BE2B2CB24FBD83900844CCC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2B2CA24FBD83900844CCC /* LoginView.swift */; };
+		9BE2B2CD24FBD84100844CCC /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2B2CC24FBD84100844CCC /* SignupView.swift */; };
+		9BE2B2D024FBD8A600844CCC /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2B2CF24FBD8A600844CCC /* FBManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +54,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01F258B23678D3EB194503CC /* Pods-WERKOUTZ-WERKOUTZUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WERKOUTZ-WERKOUTZUITests.release.xcconfig"; path = "Target Support Files/Pods-WERKOUTZ-WERKOUTZUITests/Pods-WERKOUTZ-WERKOUTZUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D9ED8A14859FFF5A0877D88 /* Pods-WERKOUTZTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WERKOUTZTests.release.xcconfig"; path = "Target Support Files/Pods-WERKOUTZTests/Pods-WERKOUTZTests.release.xcconfig"; sourceTree = "<group>"; };
+		5411FAC3B3BAABCA0A76BFA0 /* Pods-WERKOUTZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WERKOUTZ.debug.xcconfig"; path = "Target Support Files/Pods-WERKOUTZ/Pods-WERKOUTZ.debug.xcconfig"; sourceTree = "<group>"; };
+		628CAAB396AF8C0F939916A0 /* Pods-WERKOUTZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WERKOUTZ.release.xcconfig"; path = "Target Support Files/Pods-WERKOUTZ/Pods-WERKOUTZ.release.xcconfig"; sourceTree = "<group>"; };
+		69D9329165370E626868E69F /* Pods_WERKOUTZ_WERKOUTZUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WERKOUTZ_WERKOUTZUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C095640B018ABE59E0DAB9B /* Pods_WERKOUTZTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WERKOUTZTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87CFB4A984110FB97E50AD39 /* Pods_WERKOUTZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WERKOUTZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0F180924EAD35300A7A533 /* DurationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPicker.swift; sourceTree = "<group>"; };
+		9B0F180B24EADD4900A7A533 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		9B2D071824E1C03C005006BE /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		9B5A65DB24E5B7E900B98EB3 /* AddExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
+		9B5A65DD24E5BB1300B98EB3 /* ExerciseSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSearchField.swift; sourceTree = "<group>"; };
+		9B62558424E1C7020038DB0F /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		9B62558624E1C8230038DB0F /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		9B62558824E2BB8A0038DB0F /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
+		9B62558A24E2BDEA0038DB0F /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		9BA399D724E77698003A39F2 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		9BABBC5924E1BEE20094A851 /* WERKOUTZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WERKOUTZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BABBC5C24E1BEE20094A851 /* WERKOUTZApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WERKOUTZApp.swift; sourceTree = "<group>"; };
 		9BABBC5E24E1BEE20094A851 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +83,16 @@
 		9BABBC7524E1BEE60094A851 /* WERKOUTZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WERKOUTZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BABBC7924E1BEE60094A851 /* WERKOUTZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WERKOUTZUITests.swift; sourceTree = "<group>"; };
 		9BABBC7B24E1BEE60094A851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BB077F524FBD57400457DE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9BC76E8324E5C17400191B88 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
+		9BC76E8524E5C59800191B88 /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
+		9BC76E8824E5C76200191B88 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		9BC76E8A24E5C77700191B88 /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
+		9BE2B2CA24FBD83900844CCC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9BE2B2CC24FBD84100844CCC /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		9BE2B2CF24FBD8A600844CCC /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
+		ED38703A43858047FDA072A8 /* Pods-WERKOUTZTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WERKOUTZTests.debug.xcconfig"; path = "Target Support Files/Pods-WERKOUTZTests/Pods-WERKOUTZTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF3E67701B6834F081A4DF83 /* Pods-WERKOUTZ-WERKOUTZUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WERKOUTZ-WERKOUTZUITests.debug.xcconfig"; path = "Target Support Files/Pods-WERKOUTZ-WERKOUTZUITests/Pods-WERKOUTZ-WERKOUTZUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F464990DA4B564C863CA15 /* Pods_WERKOUTZ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F98416493AD37C81593325 /* Pods_WERKOUTZTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +116,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB4000C12CCBD8081D331F8 /* Pods_WERKOUTZ_WERKOUTZUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		898C1D90EE8DFC6428A6832B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87CFB4A984110FB97E50AD39 /* Pods_WERKOUTZ.framework */,
+				69D9329165370E626868E69F /* Pods_WERKOUTZ_WERKOUTZUITests.framework */,
+				7C095640B018ABE59E0DAB9B /* Pods_WERKOUTZTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B2D071724E1C01D005006BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9BE2B2CE24FBD89800844CCC /* Firebase */,
+				9B2D071824E1C03C005006BE /* Exercise.swift */,
+				9B62558624E1C8230038DB0F /* Record.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B2D071A24E1C0D4005006BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9BE2B2C724FBD81000844CCC /* Authorization */,
+				9BABBC5E24E1BEE20094A851 /* ContentView.swift */,
+				9B62558424E1C7020038DB0F /* ExerciseView.swift */,
+				9B5A65DB24E5B7E900B98EB3 /* AddExerciseView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9B2D071B24E1C0E0005006BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B82EF2324E5642800C01394 /* Cell */,
+				9B5A65DD24E5BB1300B98EB3 /* ExerciseSearchField.swift */,
+				9BC76E8524E5C59800191B88 /* NavigationButton.swift */,
+				9B0F180924EAD35300A7A533 /* DurationPicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9B82EF2324E5642800C01394 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9B62558824E2BB8A0038DB0F /* ExerciseCell.swift */,
+				9B62558A24E2BDEA0038DB0F /* HistoryCell.swift */,
+				9BC76E8324E5C17400191B88 /* EntryCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		9BABBC5024E1BEE20094A851 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +182,8 @@
 				9BABBC6D24E1BEE60094A851 /* WERKOUTZTests */,
 				9BABBC7824E1BEE60094A851 /* WERKOUTZUITests */,
 				9BABBC5A24E1BEE20094A851 /* Products */,
+				D0755BE431DFD10C46663CE8 /* Pods */,
+				898C1D90EE8DFC6428A6832B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,10 +200,14 @@
 		9BABBC5B24E1BEE20094A851 /* WERKOUTZ */ = {
 			isa = PBXGroup;
 			children = (
+				9B2D071A24E1C0D4005006BE /* Controller */,
+				9BC76E8724E5C74B00191B88 /* Extension */,
+				9B2D071724E1C01D005006BE /* Model */,
+				9B2D071B24E1C0E0005006BE /* View */,
 				9BABBC5C24E1BEE20094A851 /* WERKOUTZApp.swift */,
-				9BABBC5E24E1BEE20094A851 /* ContentView.swift */,
 				9BABBC6024E1BEE60094A851 /* Assets.xcassets */,
 				9BABBC6524E1BEE60094A851 /* Info.plist */,
+				9BB077F524FBD57400457DE9 /* GoogleService-Info.plist */,
 				9BABBC6224E1BEE60094A851 /* Preview Content */,
 			);
 			path = WERKOUTZ;
@@ -130,6 +239,47 @@
 			path = WERKOUTZUITests;
 			sourceTree = "<group>";
 		};
+		9BC76E8724E5C74B00191B88 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9BC76E8824E5C76200191B88 /* DateExtension.swift */,
+				9BA399D724E77698003A39F2 /* StringExtension.swift */,
+				9BC76E8A24E5C77700191B88 /* TimeIntervalExtension.swift */,
+				9B0F180B24EADD4900A7A533 /* ViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9BE2B2C724FBD81000844CCC /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				9BE2B2CA24FBD83900844CCC /* LoginView.swift */,
+				9BE2B2CC24FBD84100844CCC /* SignupView.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		9BE2B2CE24FBD89800844CCC /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				9BE2B2CF24FBD8A600844CCC /* FBManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		D0755BE431DFD10C46663CE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5411FAC3B3BAABCA0A76BFA0 /* Pods-WERKOUTZ.debug.xcconfig */,
+				628CAAB396AF8C0F939916A0 /* Pods-WERKOUTZ.release.xcconfig */,
+				FF3E67701B6834F081A4DF83 /* Pods-WERKOUTZ-WERKOUTZUITests.debug.xcconfig */,
+				01F258B23678D3EB194503CC /* Pods-WERKOUTZ-WERKOUTZUITests.release.xcconfig */,
+				ED38703A43858047FDA072A8 /* Pods-WERKOUTZTests.debug.xcconfig */,
+				4D9ED8A14859FFF5A0877D88 /* Pods-WERKOUTZTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BABBC7E24E1BEE60094A851 /* Build configuration list for PBXNativeTarget "WERKOUTZ" */;
 			buildPhases = (
+				AAA42C2497DAADA1DDED4D47 /* [CP] Check Pods Manifest.lock */,
 				9BABBC5524E1BEE20094A851 /* Sources */,
 				9BABBC5624E1BEE20094A851 /* Frameworks */,
 				9BABBC5724E1BEE20094A851 /* Resources */,
+				27744A0A42C2EBF8FFA83408 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +306,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BABBC8124E1BEE60094A851 /* Build configuration list for PBXNativeTarget "WERKOUTZTests" */;
 			buildPhases = (
+				6DCCF65F03A10DE6E2036B99 /* [CP] Check Pods Manifest.lock */,
 				9BABBC6624E1BEE60094A851 /* Sources */,
 				9BABBC6724E1BEE60094A851 /* Frameworks */,
 				9BABBC6824E1BEE60094A851 /* Resources */,
@@ -172,9 +325,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BABBC8424E1BEE60094A851 /* Build configuration list for PBXNativeTarget "WERKOUTZUITests" */;
 			buildPhases = (
+				2118500554852FA50CF0DE8E /* [CP] Check Pods Manifest.lock */,
 				9BABBC7124E1BEE60094A851 /* Sources */,
 				9BABBC7224E1BEE60094A851 /* Frameworks */,
 				9BABBC7324E1BEE60094A851 /* Resources */,
+				F12D51E3344C6D61C16CFAFC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +390,7 @@
 			files = (
 				9BABBC6424E1BEE60094A851 /* Preview Assets.xcassets in Resources */,
 				9BABBC6124E1BEE60094A851 /* Assets.xcassets in Resources */,
+				9BB077F624FBD57400457DE9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +410,133 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2118500554852FA50CF0DE8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WERKOUTZ-WERKOUTZUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27744A0A42C2EBF8FFA83408 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WERKOUTZ/Pods-WERKOUTZ-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WERKOUTZ/Pods-WERKOUTZ-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WERKOUTZ/Pods-WERKOUTZ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DCCF65F03A10DE6E2036B99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WERKOUTZTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAA42C2497DAADA1DDED4D47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WERKOUTZ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F12D51E3344C6D61C16CFAFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WERKOUTZ-WERKOUTZUITests/Pods-WERKOUTZ-WERKOUTZUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WERKOUTZ-WERKOUTZUITests/Pods-WERKOUTZ-WERKOUTZUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WERKOUTZ-WERKOUTZUITests/Pods-WERKOUTZ-WERKOUTZUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9BABBC5524E1BEE20094A851 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE2B2CD24FBD84100844CCC /* SignupView.swift in Sources */,
+				9B62558524E1C7020038DB0F /* ExerciseView.swift in Sources */,
+				9BC76E8924E5C76200191B88 /* DateExtension.swift in Sources */,
+				9B62558B24E2BDEA0038DB0F /* HistoryCell.swift in Sources */,
 				9BABBC5F24E1BEE20094A851 /* ContentView.swift in Sources */,
+				9B62558724E1C8230038DB0F /* Record.swift in Sources */,
+				9B5A65DC24E5B7E900B98EB3 /* AddExerciseView.swift in Sources */,
+				9B0F180C24EADD4900A7A533 /* ViewExtension.swift in Sources */,
 				9BABBC5D24E1BEE20094A851 /* WERKOUTZApp.swift in Sources */,
+				9BC76E8424E5C17400191B88 /* EntryCell.swift in Sources */,
+				9BA399D824E77698003A39F2 /* StringExtension.swift in Sources */,
+				9BE2B2CB24FBD83900844CCC /* LoginView.swift in Sources */,
+				9BC76E8624E5C59800191B88 /* NavigationButton.swift in Sources */,
+				9B2D071924E1C03C005006BE /* Exercise.swift in Sources */,
+				9BC76E8B24E5C77700191B88 /* TimeIntervalExtension.swift in Sources */,
+				9B0F180A24EAD35300A7A533 /* DurationPicker.swift in Sources */,
+				9B5A65DE24E5BB1300B98EB3 /* ExerciseSearchField.swift in Sources */,
+				9B62558924E2BB8A0038DB0F /* ExerciseCell.swift in Sources */,
+				9BE2B2D024FBD8A600844CCC /* FBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +690,7 @@
 		};
 		9BABBC7F24E1BEE60094A851 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5411FAC3B3BAABCA0A76BFA0 /* Pods-WERKOUTZ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -427,7 +704,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.craunicproductions.WERKOUTZ;
+				PRODUCT_BUNDLE_IDENTIFIER = com.craunicproductions.werkoutz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -436,6 +713,7 @@
 		};
 		9BABBC8024E1BEE60094A851 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628CAAB396AF8C0F939916A0 /* Pods-WERKOUTZ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -449,7 +727,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.craunicproductions.WERKOUTZ;
+				PRODUCT_BUNDLE_IDENTIFIER = com.craunicproductions.werkoutz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,6 +736,7 @@
 		};
 		9BABBC8224E1BEE60094A851 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED38703A43858047FDA072A8 /* Pods-WERKOUTZTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +759,7 @@
 		};
 		9BABBC8324E1BEE60094A851 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9ED8A14859FFF5A0877D88 /* Pods-WERKOUTZTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +782,7 @@
 		};
 		9BABBC8524E1BEE60094A851 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF3E67701B6834F081A4DF83 /* Pods-WERKOUTZ-WERKOUTZUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +803,7 @@
 		};
 		9BABBC8624E1BEE60094A851 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F258B23678D3EB194503CC /* Pods-WERKOUTZ-WERKOUTZUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -6,12 +6,49 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct WERKOUTZApp: App {
+    @Environment(\.scenePhase) var scenePhase
+    
+    init() {
+        FirebaseApp.configure()
+        FBManager.shared.checkAuth { error in
+            if let error = error {
+                print("WERKOUTZ - error initializing Firebase:", error.localizedDescription)
+            } else {
+                FBManager.shared.addExerciseListener()
+                FBManager.shared.addRecordListener()
+            }
+        }
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onChange(of: scenePhase, perform: { phase in
+                    switch phase {
+                    case .active: didBecomeActive()
+                    case .background: didEnterBackground()
+                    case .inactive: didBecomeInactive()
+                    @unknown default: fatalError("This case is not handled!")
+                    }
+                })
         }
+    }
+}
+
+extension WERKOUTZApp {
+    private func didBecomeActive() {
+        
+    }
+    
+    private func didBecomeInactive() {
+        
+    }
+    
+    private func didEnterBackground() {
+        
     }
 }
