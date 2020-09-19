@@ -17,9 +17,15 @@ struct ExerciseView: View {
     
     var body: some View {
         VStack {
-            Image(uiImage: exercise.image ?? UIImage(systemName: "rectangle.and.paperclip")!)
-                .renderingMode(.template)
-                .frame(width: screen.width, height: screen.height / 3)
+            if exercise.image == nil {
+                Image(systemName: "rectangle.and.paperclip")
+                    .frame(width: screen.width, height: screen.height / 3)
+            } else {
+                Image(uiImage: exercise.image!)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: screen.width, height: screen.height / 3)
+            }
             List {
                 HStack {
                     Text("History")
@@ -53,12 +59,14 @@ extension ExerciseView {
         record.set { (error) in
             if let error = error {
                 print("ExerciseView - \(#function) encountered an error:", error.localizedDescription)
-            }
+            } 
         }
     }
     
     private func handleButton() {
-        if isAdding { add() }
+        if isAdding {
+            add()
+        }
         isAdding.toggle()
     }
 }

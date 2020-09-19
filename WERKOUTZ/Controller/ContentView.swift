@@ -8,18 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var manager: FBManager
     @State private var isEditing: Bool = false
     @State private var showAdd: Bool = false
-    @State private var exercises: [Exercise] = FBManager.shared.exercises
-    @State private var records: [Record] = FBManager.shared.records
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(exercises, id: \.id) { exercise in
+                ForEach(manager.user?.exercises ?? [], id: \.id) { exercise in
                     ZStack(alignment: .leading) {
-                        NavigationLink("", destination: ExerciseView(exercise: exercise, records: $records))
-                        ExerciseCell(exercise: exercise, records: records.records(forExercise: exercise))
+                        NavigationLink("", destination: ExerciseView(exercise: exercise, records: $manager.records))
+                        ExerciseCell(exercise: exercise, records: manager.records.records(forExercise: exercise))
                     }.padding(.all, 2)
                 }.onDelete(perform: handleDelete(at:) )
             }.navigationBarTitle("WERKOUTZ", displayMode: .inline)
@@ -28,14 +27,17 @@ struct ContentView: View {
             })
             .listStyle(InsetGroupedListStyle())
         }.sheet(isPresented: $showAdd, content: {
-            AddExerciseView()
+            AddExerciseView(showModal: $showAdd)
+                .environmentObject(manager)
         })
     }
 }
 
 extension ContentView {
     private func handleDelete(at index: IndexSet) {
-        
+        guard let index = Array(index).first, let user = manager.user else { return }
+        let exercise = user.exercises[index]
+        user.removeExercise(exercise)
     }
 }
 

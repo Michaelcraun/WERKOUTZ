@@ -18,8 +18,10 @@ struct WERKOUTZApp: App {
             if let error = error {
                 print("WERKOUTZ - error initializing Firebase:", error.localizedDescription)
             } else {
-                FBManager.shared.addExerciseListener()
-                FBManager.shared.addRecordListener()
+                FBManager.shared.addExerciseListener { (_, _) in
+                    FBManager.shared.addRecordListener()
+                    FBManager.shared.user?.addListener()
+                }
             }
         }
     }
@@ -27,6 +29,7 @@ struct WERKOUTZApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(FBManager.shared)
                 .onChange(of: scenePhase, perform: { phase in
                     switch phase {
                     case .active: didBecomeActive()

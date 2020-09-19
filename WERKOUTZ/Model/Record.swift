@@ -15,8 +15,18 @@ class Record: Identifiable {
     var duration: String?
     var exerciseRef: DocumentReference!
     var reps: Int?
+    var user: DocumentReference!
     var weight: Double?
     
+    private var dict: [String : Any] {
+        return [
+            Key.date.rawValue : date,
+            Key.duration.rawValue : duration as Any,
+            Key.exercise.rawValue : exerciseRef as Any,
+            Key.reps.rawValue : reps as Any,
+            Key.user.rawValue : user as Any,
+            Key.weight.rawValue : weight as Any]
+    }
     var description: String {
         switch exercise.type {
         case .duration: return duration!.userRepresentableTime
@@ -42,9 +52,11 @@ class Record: Identifiable {
     }
     
     init(exercise: Exercise, duration: String? = nil, reps: Int? = nil, weight: Double? = nil) {
+        self.id = UUID().uuidString
         self.exerciseRef = exercise.reference
         self.duration = duration
         self.reps = reps
+        self.user = FBManager.shared.user?.reference
         self.weight = weight
     }
     
@@ -54,10 +66,18 @@ class Record: Identifiable {
         self.exerciseRef = dict[Key.exercise.rawValue] as? DocumentReference
         self.reps = dict[Key.reps.rawValue] as? Int
         self.weight = dict[Key.weight.rawValue] as? Double
+        self.user = dict[Key.user.rawValue] as? DocumentReference
     }
     
     func set(_ completion: @escaping (Error?) -> Void) {
-        completion(nil)
+        reference.setData(dict) { (error) in
+            if let error = error {
+                print("Record - \(#function) encountered an error:", error.localizedDescription)
+                completion(error)
+            } else {
+                completion(nil)
+            }
+        }
     }
 }
 
@@ -67,6 +87,7 @@ extension Record {
         case duration
         case exercise
         case reps
+        case user
         case weight
     }
 }

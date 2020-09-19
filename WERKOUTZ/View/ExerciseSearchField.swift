@@ -8,13 +8,11 @@
 import SwiftUI
 
 struct ExerciseSearchField: View {
-    @State private var searchText: String = ""
-    @State private var exercises: [Exercise] = [
-        // MARK: Temporary
-//        Exercise(name: "Elipitical", type: .duration),
-//        Exercise(name: "Leg Press", type: .weighted),
-//        Exercise(name: "Overhead Press", type: .weighted)
-    ]
+    @EnvironmentObject var manager: FBManager
+    @State private var exercises: [Exercise] = []
+    @Binding var searchText: String
+    @Binding var type: String
+    let onSelect: (Exercise) -> Void
     
     var body: some View {
         VStack {
@@ -32,17 +30,12 @@ struct ExerciseSearchField: View {
 
 extension ExerciseSearchField {
     private func search() {
-        // MARK: Temporary
-        exercises = exercises.filter({ $0.name.lowercased().contains(searchText.lowercased()) })
+        manager.searchExercises(searchText)
+        exercises = manager.searchedExercisees ?? manager.exercises
     }
     
     private func select(_ exercise: Exercise) {
         searchText = exercise.name
-    }
-}
-
-struct ExerciseSearchField_Previews: PreviewProvider {
-    static var previews: some View {
-        ExerciseSearchField()
+        onSelect(exercise)
     }
 }
