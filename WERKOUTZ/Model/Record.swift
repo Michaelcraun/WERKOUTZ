@@ -56,7 +56,7 @@ class Record: Identifiable {
         self.exerciseRef = exercise.reference
         self.duration = duration
         self.reps = reps
-        self.user = FBManager.shared.user?.reference
+        self.user = FBManager.shared.user.reference
         self.weight = weight
     }
     

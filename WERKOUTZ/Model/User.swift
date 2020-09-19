@@ -5,10 +5,10 @@
 //  Created by Michael Craun on 9/12/20.
 //
 
-import Foundation
+import SwiftUI
 import Firebase
 
-class User {
+class User: ObservableObject {
     private var dict: [String : Any] {
         return ["exercises" : exercises.map({ $0.reference })]
     }
@@ -18,6 +18,8 @@ class User {
     var reference: DocumentReference {
         return FBManager.shared.database.collection("user").document(id)
     }
+    
+    init() {  }
     
     init(user: Firebase.User) {
         self.id = user.uid

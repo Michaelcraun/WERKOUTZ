@@ -78,7 +78,7 @@ extension AddExerciseView {
     
     private func finish() {
         if let exercise = exercise {
-            FBManager.shared.user?.addExercise(exercise)
+            FBManager.shared.user.addExercise(exercise)
             showModal.toggle()
         } else if let type = Exercise.ExerciseType(rawValue: type) {
             let exercise = Exercise(name, image: image, type: type)
@@ -86,7 +86,7 @@ extension AddExerciseView {
                 if let error = error {
                     print("AddExerciseView - \(#function) encountered an error:", error.localizedDescription)
                 } else {
-                    FBManager.shared.user?.addExercise(exercise)
+                    FBManager.shared.user.addExercise(exercise)
                     showModal.toggle()
                 }
             }

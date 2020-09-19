@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var manager: FBManager
+    @EnvironmentObject var user: User
     @State private var isEditing: Bool = false
     @State private var showAdd: Bool = false
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(manager.user?.exercises ?? [], id: \.id) { exercise in
+                ForEach(user.exercises ?? [], id: \.id) { exercise in
                     ZStack(alignment: .leading) {
                         NavigationLink("", destination: ExerciseView(exercise: exercise, records: $manager.records))
                         ExerciseCell(exercise: exercise, records: manager.records.records(forExercise: exercise))
@@ -35,9 +36,9 @@ struct ContentView: View {
 
 extension ContentView {
     private func handleDelete(at index: IndexSet) {
-        guard let index = Array(index).first, let user = manager.user else { return }
-        let exercise = user.exercises[index]
-        user.removeExercise(exercise)
+        guard let index = Array(index).first else { return }
+        let exercise = manager.user.exercises[index]
+        manager.user.removeExercise(exercise)
     }
 }
 

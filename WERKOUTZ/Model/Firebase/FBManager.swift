@@ -12,7 +12,7 @@ class FBManager: ObservableObject {
     @Published var exercises: [Exercise] = []
     @Published var records: [Record] = []
     @Published var searchedExercisees: [Exercise]?
-    @Published var user: User?
+    @Published var user: User = User()
     
     static let shared = FBManager()
     
@@ -21,7 +21,7 @@ class FBManager: ObservableObject {
     }
     private var recordQuery: Query {
         database.collection("record")
-            .whereField("user", isEqualTo: user?.reference as Any)
+            .whereField("user", isEqualTo: user.reference as Any)
     }
     
     let database = Firestore.firestore()

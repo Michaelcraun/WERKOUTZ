@@ -20,7 +20,7 @@ struct WERKOUTZApp: App {
             } else {
                 FBManager.shared.addExerciseListener { (_, _) in
                     FBManager.shared.addRecordListener()
-                    FBManager.shared.user?.addListener()
+                    FBManager.shared.user.addListener()
                 }
             }
         }
@@ -30,6 +30,7 @@ struct WERKOUTZApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(FBManager.shared)
+                .environmentObject(FBManager.shared.user)
                 .onChange(of: scenePhase, perform: { phase in
                     switch phase {
                     case .active: didBecomeActive()
