@@ -11,11 +11,7 @@ import Firebase
 class Exercise: Identifiable {
     var id: String?
     
-    var image: UIImage? {
-        didSet {
-            print("Exercise - \(#function) for id: \(id ?? "nil")", image?.description ?? "nil")
-        }
-    }
+    var image: UIImage?
     var name: String = ""
     var type: ExerciseType = .duration
     

@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(user.exercises ?? [], id: \.id) { exercise in
+                ForEach(user.exercises, id: \.id) { exercise in
                     ZStack(alignment: .leading) {
                         NavigationLink("", destination: ExerciseView(exercise: exercise, records: $manager.records))
                         ExerciseCell(exercise: exercise, records: manager.records.records(forExercise: exercise))

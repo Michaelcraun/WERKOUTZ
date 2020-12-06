@@ -1,0 +1,6 @@
+framework module Pods_WERKOUTZ_WERKOUTZUITests {
+  umbrella header "Pods-WERKOUTZ-WERKOUTZUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
